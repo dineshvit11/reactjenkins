@@ -1,13 +1,18 @@
 pipeline {
     agent any
 
+    tools {
+        nodejs 'node-18'
+    }
+
     stages {
-        stage('Install') {
+        stage('Install Dependencies') {
             steps {
                 sh 'npm install'
             }
         }
-        stage('Build') {
+
+        stage('Build React App') {
             steps {
                 sh 'npm run build'
             }
