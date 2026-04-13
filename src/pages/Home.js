@@ -26,7 +26,7 @@ export default function Home() {
       {/* Intro */}
       <Box sx={{ mt: 4, mb: 4 }}>
         <Typography variant="h4" gutterBottom>
-          Welcome to Our Online Store
+          Welcome to Our Online Store test
         </Typography>
 
         <Typography variant="body1">
